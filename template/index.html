@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<!--
+Google HTML5 slide template
+
+Authors: Luke Mahé (code)
+Marcin Wichary (code and design)
+
+Dominic Mazzoni (browser compatibility)
+Charles Chen (ChromeVox support)
+
+URL: http://code.google.com/p/html5slides/
+-->
+
+<html>
+    <head>
+        <title>Presentation</title>
+
+        <meta charset='utf-8'>
+        <link href="../styles.css"  rel="stylesheet" type="text/css" />
+
+        <script src="../slides.js"></script>
+        <script src="../prefixfree.min.js"></script>
+    </head>
+
+    <style>
+        /* Your individual styles here, or just use inline styles if that’s
+         what you want. */
+
+        .slides.template-evry > article:not(.nobackground):not(.biglogo) {
+
+            background-image: url(../images/newco-header-border.jpg), url(../images/Evry_logo_RGB.png);
+            background-position: center bottom, 800px 630px;
+            background-size: 100% 10px, 9%;
+            background-repeat: no-repeat;
+        }
+        .evry-green {
+            background: linear-gradient(left, #ADDC65, #ADDE97);
+            border-radius: 30px; /*warning, redundant code here! */
+        }
+        .evry-blue {
+            background: linear-gradient( left, #12B3D8,#6CCEE9);
+            border-radius: 30px;
+        }
+
+    </style>
+
+    <body style='display: none'>
+
+        <section class='slides layout-regular template-evry'>
+
+            <!-- Your slides (<article>s) go here. Delete or comment out the
+            slides below. -->
+
+            <article>
+                <h1> Velkommen til faggruppen for frontend! </h1>
+                <img src="../images/cssawesome.png" />
+            </article>
+            <article>
+                <h2>Nå: Et kort overblikk</br>
+                Etterpå: En liten workshop</h2>
+            </article>
+            <article>
+                <h1>Språk</h1>
+            </article>
+            <article>
+
+                <img src="../images/power.jpg" style="width: 100%" />
+
+            </article>
+            <article>
+                <img src="../images/powerAndPre.jpg" style="width: 100%" />
+            </article>
+            <article class="smaller">
+                <pre>
+                   
+
+    $("body").delegate("p", "myCustomEvent", function(e, myName, myValue){
+      $(this).text("Hi there!");
+      $("span").stop().css("opacity", 1)
+               .text("myName = " + myName)
+               .fadeIn(30).fadeOut(1000);
+    });
+    $("button").click(function () {
+      $("p").trigger("myCustomEvent");
+    });
+
+     </pre>
+            </article>
+            <article>
+                <img src="../images/futurelanding.png" style="width: 100%" />
+            </article>
+            <article>
+                <h1>Arkitektur</h1>
+
+            </article>
+            <article class="fill">
+                <h3>jQuery-spaghettikode </h3>
+                <p>
+                    <img class='centered'  src='../images/spaghettimess.jpg'>
+                </p>
+
+            </article>
+            <article >
+                <img src="../images/mvc.png" />
+            </article>
+            <article>
+                <img src="../images/backbone.png" style="width: 50%;" />
+                <div class="build">
+
+                    <img src="../images/ember.png" style="width: 50%; margin-top: -30px; margin-bottom: -40px;" />
+                    <img src="../images/batman.png" style="width: 50%;" />
+                    <img src="../images/angular.png" style="width: 50%;" />
+                    <img src="../images/knockout.png"  style="width: 50%;" />
+
+                </div>
+
+            </article>
+            <article>
+                <h3>Bruk av template på klienten </h3>
+                <p>
+                    <img class='centered' style='height: 500px' src='../images/linkedin.png'>
+                </p>
+                <div class='source'>
+                    Kilde: LinkedIn
+                </div>
+            </article>
+            <article>
+
+                <img src="../images/realtime.png" style="width: 80%;"/>
+            </article>
+
+            <article class="fill">
+                <h3>Hvordan skrive JavaScript-kode som er lett å vedlikeholde? </h3>
+                <p>
+                    <img class='centered' style="width:90%;" src='../images/learningjsd.jpg'>
+                </p>
+                <div class='source'>
+                    Forfatter: Addy Osmani
+                </div>
+
+            </article>
+            <article>
+                <h1>Beste praksis</h1>
+            </article>
+            <article class="fill">
+                <h3>Mobile first</h3>
+                <img class="centered" src="../images/mobilemain.jpg" style="width:100%;" />
+            </article>
+            <article>
+                <h3>Tester du JavaScript-koden din? </h3>
+                <p>
+                    <img class='centered' style="width:80%;" src='../images/jstesting.png' />
+                </p>
+
+            </article>
+
+            <article>
+                <img src="../images/deployment.png" style="width:100%;" />
+                <h2>Hvordan legge til rette for at flere utviklere kan jobbe sammen på store prosjekt?</h2>
+            </article>
+
+            <article>
+                <h3>Workshop</h3>
+                <section class="evry-green" style="margin-top: 10px;">
+                    <ol style="padding: 15px; padding-left: 45px;">
+                        <li>
+                            Hvilke tema vil du lære mer om?
+                        </li>
+                        <li>
+                            Skal vi introdusere eller gå i dybden?
+                        </li>
+                        <li>
+                            Hvordan skal formatet være?
+                        </li>
+                        <li>
+                            Hva forventes av hver enkelt?
+                        </li>
+                        <li>
+                            Hvor ofte skal vi møtes?
+                        </li>
+                        <li>
+                            Hvilke tidspunkt passer best?
+                        </li>
+                   <ol>
+
+                </section>
+                <section class="evry-blue" style="margin-top: 10px;">
+                    <p style="padding: 15px;" >
+                        Hvordan skal en faggruppe <em>ikke</em> være?
+                    </p>
+                </section>
+            </article>
+
+        </section>
+
+    </body>
+</html>
